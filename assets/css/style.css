@@ -1,0 +1,317 @@
+.border-btn-wrapper {
+  transform: translate(0%, 0%);
+}
+
+.fm-big-circle {
+  animation: fRotate 50s linear infinite;
+}
+
+.fm-icon-block img {
+  animation: fRotate-reverse 50s linear infinite;
+}
+.fm-icon-block:first-child {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fm-icon-block:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.fm-icon-block:nth-child(3) {
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+.fm-icon-block:nth-child(4) {
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.fm-icon-block:nth-child(5) {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fm-icon-block:nth-child(6) {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.fm-icon-block:nth-child(7) {
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+.fm-icon-block:nth-child(8) {
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fRotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.play-btn::after {
+  animation: rotatePlay 3s linear infinite;
+}
+
+.play-btn::before {
+  animation: rotatePlayRev 3s linear infinite;
+}
+
+@keyframes rotatePlay {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotatePlayRev {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-359deg);
+  }
+}
+
+.video-ratio {
+  aspect-ratio: 134 / 63;
+}
+
+.v-modal {
+  animation: v-modal 0.5s linear;
+  transform-origin: left;
+}
+
+@keyframes v-modal {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.active-faq .plus {
+  display: none !important;
+}
+
+.active-faq .minuse {
+  display: block !important;
+}
+
+/* before width increase anim  */
+.width-increase::before {
+  animation: w-increase 1s linear;
+  transform-origin: left;
+}
+
+@keyframes w-increase {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.screen-height {
+  height: calc(100vh - 70px);
+}
+
+canvas {
+  background-color: transparent !important; /* Default background color */
+}
+
+/* parallax style  */
+#parallax-mouse {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+}
+#parallax-mouse .layer:nth-child(1) {
+  position: relative !important;
+  left: -36% !important;
+  top: -40% !important;
+}
+#parallax-mouse .layer:nth-child(2) {
+  position: relative !important;
+  left: 51% !important;
+  top: -45% !important;
+}
+#parallax-mouse .layer:nth-child(3) {
+  position: relative !important;
+  left: -48% !important;
+}
+#parallax-mouse .layer:nth-child(4) {
+  position: relative !important;
+  top: 42% !important;
+  left: -49% !important;
+}
+
+#parallax-mouse .layer:nth-child(5) {
+  position: relative !important;
+  left: 14% !important;
+  top: 42% !important;
+}
+#parallax-mouse .layer:nth-child(6) {
+  position: relative !important;
+  top: 36% !important;
+  left: 33% !important;
+}
+
+/* home three  */
+.h3-nav-logo {
+  clip-path: polygon(0 0, 100% 0%, 73% 100%, 0% 100%);
+}
+
+.bg-cover-bottom {
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: bottom !important;
+}
+
+/* custom scrollbar  */
+
+/* width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #f9c8b8;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ec4814;
+}
+.swiper-slide-thumb-active {
+  border: 2px solid #ec4814;
+}
+.open-anim {
+  transform-origin: top left;
+  animation: slider-open 200ms linear;
+}
+
+@keyframes slider-open {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.option-open {
+  transform-origin: top left;
+  animation: option-open 300ms linear;
+}
+
+@keyframes option-open {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.bg-\[\#FFFAF0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 240 / var(--tw-bg-opacity)) !important;
+}
+
+.vrunda-site-logo img{max-width:200px}
+.img-left-first{width:40%}
+
+.vrunda-site-logo img {
+  max-width: 140px;
+}
+
+.img-left-first {
+  width: 40%;
+}
+
+
+/* ============================= */
+/* CENTER MISSION / MARKETS */
+/* ============================= */
+
+.center-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-section-inner {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.center-section-content {
+  width: 100%;
+  max-width: 700px;
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .center-section-inner {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .center-section-content {
+    max-width: 100%;
+  }
+
+  .center-section-content ul {
+    text-align: left;
+  }
+
+}
